@@ -31,7 +31,7 @@ Criar elementos diversos que usem pelo menos uma vez os seguintes elementos (nã
 <title>
 
 
-Exercício de Fixação 1 - Parte 2 (CSS)
+# Exercício de Fixação 1 - Parte 2 (CSS)
 
 Utilizando a página criada no exercício anterior, acrescente CSS para:
 Melhor formatar a tabela criada;
@@ -41,7 +41,7 @@ Utilizar recursos de fonte, cor, posicionamento e formatação.
 
 
 
-Exercício de Fixação 1 - Parte 3 (Bootstrap)
+# Exercício de Fixação 1 - Parte 3 (Bootstrap)
 
 Utilizando a página criada nos exercícios anteriores, acrescente o conceito do bootstrap em toda  página aplicando: 
 Conceito de Grid com linhas e colunas para pelo menos 3 tamanho diferentes de monitor.
