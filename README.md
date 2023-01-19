@@ -19,16 +19,7 @@ Uma tabela com uma listagem de 5 pessoas, com os mesmos campos indicados a cima,
 Uma lista de atividades ordenada.
 Uma lista de compras sem ordenação.
 Criar elementos diversos que usem pelo menos uma vez os seguintes elementos (não sendo limitados a eles):
-<h1>
-<h3>
-<p>
-<a>
-<image>
-<div>
-<label>
-<pre>
-<span>
-<title>
+h1, h3, p, a, , image , div, label, pre, span, title
 
 
 # Exercício de Fixação 1 - Parte 2 (CSS)
