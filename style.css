@@ -12,10 +12,10 @@
 
 body {
     background-color: rgb(245, 198, 138);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #tabela {
-    font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
 }
