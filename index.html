@@ -2,189 +2,224 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exercício de Fixação 1 - Parte 1 (HTML)</title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Fixação 1 - Parte 1 (HTML)</title>
+    <link rel="stylesheet"
+        type="text/css"
+        href="script.css" />
 </head>
 
 <body>
-  <div>
+    <div>
 
-  </div>
-  <form id="form">
-    <h1>Cadastro de Pessoa</h1>
+    </div>
+    <form id="form">
+        <h1>Cadastro de Pessoa</h1>
+
+        <div>
+            <label for="codigo">Código:</label>
+            <input type="text"
+                id="codigo"
+                name="codigo" />
+        </div>
+        <div>
+            <label for="Nome">Nome:</label>
+            <input type="text"
+                id="nome"
+                name="nome" />
+        </div>
+        <div>
+            <label for="nascimento">Data de Nascimento:</label>
+            <input type="date"
+                id="nascimento"
+                name="nascimento" />
+        </div>
+        <div>
+            <label for="sexo">Sexo:</label>
+            <input type="radio"
+                id="feminino"
+                name="opcoes"
+                value="Feminino">Feminino</input>
+            <input type="radio"
+                id="masculino"
+                name="opcoes"
+                value="Masculino" />Masculino</input>
+        </div>
+        <div>
+            <label for="altura">Altura:</label>
+            <input type="number"
+                id="altura"
+                name="altura" />
+        </div>
+        <div>
+            <label for="peso">Peso:</label>
+            <input type="number"
+                id="peso"
+                name="peso" />
+        </div>
+        <div>
+            <label for="cpf">CPF:</label>
+            <input type="text"
+                id="cpf"
+                name="cpf" />
+        </div>
+        <div>
+            <label for="especial">É portador de necessidades especiais ?</label>
+            <input type="checkbox"
+                id="sim"
+                name="opcoes"
+                value="Sim">Sim</input>
+            <input type="checkbox"
+                id="nao"
+                name="opcoes"
+                value="Nao" />Não</input>
+        </div>
+        <div>
+            <label for="tipodepessoa">Tipo de Pessoa</label>
+            <select name="tipodepessoa"
+                id="tipodepessoa">
+                <option value="fisica">Física</option>
+                <option value="juridica">Jurídica</option>
+                <option value="especial">Especial</option>
+                <option value="outros">Outros</option>
+            </select>
+        </div>
+        <div>
+            <button onclick="salvar()">Salvar</button>
+        </div>
+    </form>
+
 
     <div>
-      <label for="codigo">Código:</label>
-      <input type="text" id="codigo" name="codigo" />
+        <table id="tabela">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nome</th>
+                    <th>Data de Nascimento</th>
+                    <th>Sexo</th>
+                    <th>Altura</th>
+                    <th>Peso</th>
+                    <th>CPF</th>
+                    <th>Especial</th>
+                    <th>Tipo de Pessoa</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <tr>
+                    <td>001</td>
+                    <td>Maria</td>
+                    <td>23/07/2000</td>
+                    <td>Feminino</td>
+                    <td>1.70</td>
+                    <td>80</td>
+                    <td>0216546165</td>
+                    <td>Sim</td>
+                    <td>Física</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Joana</td>
+                    <td>10/07/2001</td>
+                    <td>Feminino</td>
+                    <td>1.70</td>
+                    <td>80</td>
+                    <td>0216546165</td>
+                    <td>Sim</td>
+                    <td>Física</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Clarice</td>
+                    <td>23/07/2000</td>
+                    <td>Feminino</td>
+                    <td>1.70</td>
+                    <td>80</td>
+                    <td>0216546165</td>
+                    <td>Sim</td>
+                    <td>Física</td>
+                </tr>
+                <tr>
+                    <td>004</td>
+                    <td>Luíza</td>
+                    <td>23/07/2000</td>
+                    <td>Feminino</td>
+                    <td>1.70</td>
+                    <td>80</td>
+                    <td>0216546165</td>
+                    <td>Sim</td>
+                    <td>Jurídica</td>
+                </tr>
+                <tr>
+                    <td>005</td>
+                    <td>Janice</td>
+                    <td>03/07/2000</td>
+                    <td>Feminino</td>
+                    <td>1.80</td>
+                    <td>80</td>
+                    <td>0216546165</td>
+                    <td>Não</td>
+                    <td>Física</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td>5</td>
+                </tr>
+            </tfoot>
+        </table>
     </div>
-    <div>
-      <label for="Nome">Nome:</label>
-      <input type="text" id="nome" name="nome" />
-    </div>
-    <div>
-      <label for="nascimento">Data de Nascimento:</label>
-      <input type="date" id="nascimento" name="nascimento" />
-    </div>
-    <div>
-      <label for="sexo">Sexo:</label>
-      <input type="radio" id="feminino" name="opcoes" value="Feminino">Feminino</input>
-      <input type="radio" id="masculino" name="opcoes" value="Masculino" />Masculino</input>
-    </div>
-    <div>
-      <label for="altura">Altura:</label>
-      <input type="number" id="altura" name="altura" />
-    </div>
-    <div>
-      <label for="peso">Peso:</label>
-      <input type="number" id="peso" name="peso" />
-    </div>
-    <div>
-      <label for="cpf">CPF:</label>
-      <input type="text" id="cpf" name="cpf" />
-    </div>
-    <div>
-      <label for="especial">É portador de necessidades especiais ?</label>
-      <input type="checkbox" id="sim" name="opcoes" value="Sim">Sim</input>
-      <input type="checkbox" id="nao" name="opcoes" value="Nao" />Não</input>
-    </div>
-    <div>
-      <label for="tipodepessoa">Tipo de Pessoa</label>
-      <select name="tipodepessoa" id="tipodepessoa">
-        <option value="fisica">Física</option>
-        <option value="juridica">Jurídica</option>
-        <option value="especial">Especial</option>
-        <option value="outros">Outros</option>
-      </select>
-    </div>
-    <div>
-      <button onclick="salvar()">Salvar</button>
-    </div>
-  </form>
 
+    <h2>Turismo no Brasil</h2>
 
-  <div>
-    <table id="tabela">
-      <thead>
-        <tr>
-          <th>Código</th>
-          <th>Nome</th>
-          <th>Data de Nascimento</th>
-          <th>Sexo</th>
-          <th>Altura</th>
-          <th>Peso</th>
-          <th>CPF</th>
-          <th>Especial</th>
-          <th>Tipo de Pessoa</th>
-        </tr>
-      </thead>
-      <tbody id="tbody">
-        <tr>
-          <td>001</td>
-          <td>Maria</td>
-          <td>23/07/2000</td>
-          <td>Feminino</td>
-          <td>1.70</td>
-          <td>80</td>
-          <td>0216546165</td>
-          <td>Sim</td>
-          <td>Física</td>
-        </tr>
-        <tr>
-          <td>002</td>
-          <td>Joana</td>
-          <td>10/07/2001</td>
-          <td>Feminino</td>
-          <td>1.70</td>
-          <td>80</td>
-          <td>0216546165</td>
-          <td>Sim</td>
-          <td>Física</td>
-        </tr>
-        <tr>
-          <td>003</td>
-          <td>Clarice</td>
-          <td>23/07/2000</td>
-          <td>Feminino</td>
-          <td>1.70</td>
-          <td>80</td>
-          <td>0216546165</td>
-          <td>Sim</td>
-          <td>Física</td>
-        </tr>
-        <tr>
-          <td>004</td>
-          <td>Luíza</td>
-          <td>23/07/2000</td>
-          <td>Feminino</td>
-          <td>1.70</td>
-          <td>80</td>
-          <td>0216546165</td>
-          <td>Sim</td>
-          <td>Jurídica</td>
-        </tr>
-        <tr>
-          <td>005</td>
-          <td>Janice</td>
-          <td>03/07/2000</td>
-          <td>Feminino</td>
-          <td>1.80</td>
-          <td>80</td>
-          <td>0216546165</td>
-          <td>Não</td>
-          <td>Física</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td>Total</td>
-          <td>5</td>
-        </tr>
-      </tfoot>
-    </table>
-  </div>
+    <div>
+        <h3> Lista ordenada de Cidades </h3>
+        <ol>
+            <li>Miracema</li>
+            <li>Porto Nacional</li>
+            <li>Novo Jardim</li>
+            <li>Brasília</li>
+        </ol>
+    </div>
 
-  <h2>Turismo no Brasil</h2>
+    <div>
+        <h3> Lista não ordenada de Estados </h3>
+        <ul>
+            <li>Mato Grosso do Sul</li>
+            <li>Bahia</li>
+            <li>Acre</li>
+            <li>Tocantins</li>
+            <li>Rio Grande do Norte</li>
+        </ul>
+    </div>
 
-  <div>
-    <h3> Lista ordenada de Cidades </h3>
-    <ol>
-      <li>Miracema</li>
-      <li>Porto Nacional</li>
-      <li>Novo Jardim</li>
-      <li>Brasília</li>
-    </ol>
-  </div>
+    <div>
+        <h3>Jalapão</h3>
+        <p>Entre dunas douradas, paisagens grandiosas, fervedouros e cachoeiras o Jalapão cada dia mais conquista os
+            viajantes amantes do ecoturismo.</p>
+        <img src="https://cdn.pixabay.com/photo/2019/06/21/14/45/jalapon-4289637_960_720.jpg"
+            alt=""
+            srcset=""
+            id="dunas" />
+    </div>
 
-  <div>
-    <h3> Lista não ordenada de Estados </h3>
-    <ul>
-      <li>Mato Grosso do Sul</li>
-      <li>Bahia</li>
-      <li>Acre</li>
-      <li>Tocantins</li>
-      <li>Rio Grande do Norte</li>
-    </ul>
-  </div>
+    <div>
+        <h3>Pantanal</h3>
+        <p>Considerado um dos mais extraordinários patrimônios naturais do Brasil, possui uma biodiversidade faunística
+            apenas superada pela existente na Amazônia</p>
+        <img src="https://cdn.pixabay.com/photo/2013/05/29/00/04/wisconsin-114340_960_720.jpg"
+            alt=""
+            srcset=""
+            id="dunas" />
+    </div>
 
-  <div>
-    <h3>Jalapão</h3>
-    <p>Entre dunas douradas, paisagens grandiosas, fervedouros e cachoeiras o Jalapão cada dia mais conquista os
-      viajantes amantes do ecoturismo.</p>
-    <img src="https://cdn.pixabay.com/photo/2019/06/21/14/45/jalapon-4289637_960_720.jpg" alt="" srcset="" id="dunas" />
-  </div>
-
-  <div>
-    <h3>Pantanal</h3>
-    <p>Considerado um dos mais extraordinários patrimônios naturais do Brasil, possui uma biodiversidade faunística
-      apenas superada pela existente na Amazônia</p>
-    <img src="https://cdn.pixabay.com/photo/2013/05/29/00/04/wisconsin-114340_960_720.jpg" alt="" srcset=""
-      id="dunas" />
-  </div>
-
-  <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript"
+        src="index.js"></script>
 </body>
 
 </html>
