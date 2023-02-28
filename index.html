@@ -10,7 +10,7 @@
     <title>Exercício de Fixação 1 - Parte 1 (HTML)</title>
     <link rel="stylesheet"
         type="text/css"
-        href="script.css" />
+        href="style.css" />
 </head>
 
 <body>
@@ -27,27 +27,25 @@
                 name="codigo" />
         </div>
         <div>
-            <label for="Nome">Nome:</label>
+            <label for="nome">Nome:</label>
             <input type="text"
                 id="nome"
                 name="nome" />
         </div>
         <div>
-            <label for="nascimento">Data de Nascimento:</label>
-            <input type="date"
-                id="nascimento"
-                name="nascimento" />
+            <label for="dataNasc">Data de Nascimento:</label>
+            <input type="date" id="dataNasc" name="dataNasc"/>
         </div>
         <div>
             <label for="sexo">Sexo:</label>
             <input type="radio"
-                id="feminino"
-                name="opcoes"
+            name="sexo" id="feminino"
+                
                 value="Feminino">Feminino</input>
             <input type="radio"
                 id="masculino"
-                name="opcoes"
-                value="Masculino" />Masculino</input>
+                name="sexo"
+                value="Masculino"/>Masculino</input>
         </div>
         <div>
             <label for="altura">Altura:</label>
@@ -89,7 +87,7 @@
             </select>
         </div>
         <div>
-            <button onclick="salvar()">Salvar</button>
+            <button onclick="adicionarPessoa()">Adicionar</button>
         </div>
     </form>
 
@@ -169,7 +167,7 @@
             <tfoot>
                 <tr>
                     <td>Total</td>
-                    <td>5</td>
+                    <td id="contador"> </td>
                 </tr>
             </tfoot>
         </table>
@@ -219,7 +217,7 @@
     </div>
 
     <script type="text/javascript"
-        src="index.js"></script>
+        src="script.js"></script>
 </body>
 
 </html>
