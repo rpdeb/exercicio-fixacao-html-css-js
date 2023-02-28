@@ -44,7 +44,7 @@ function adicionarPessoa() {
 
 			celulaCodigo.innerHTML = codigo;
 			celulaNome.innerHTML = nome;
-			DataNasc.innerHTML = dataNascimento;
+			celulaDataNasc.innerHTML = dataNascimento;
 
 			document.getElementById("codigo").value = "";
 			document.getElementById("nome").value = "";
