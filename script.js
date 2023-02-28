@@ -30,6 +30,43 @@ function lerDados() {
 
 }
 
+function adicionarPessoa() {
+			var tabela = document.getElementById("tabela").getElementsByTagName('tbody')[0];
+			var linha = tabela.insertRow();
+
+			var celulaCodigo = linha.insertCell(0);
+			var celulaNome = linha.insertCell(1);
+			var celulaDataNasc = linha.insertCell(2);
+
+			var codigo = document.getElementById("codigo").value;
+			var nome = document.getElementById("nome").value;
+			var dataNascimento = document.getElementById("idade").value;
+
+			celulaCodigo.innerHTML = codigo;
+			celulaNome.innerHTML = nome;
+			DataNasc.innerHTML = dataNascimento;
+
+			document.getElementById("codigo").value = "";
+			document.getElementById("nome").value = "";
+			document.getElementById("dataNasc").value = "";
+
+			atualizarContador();
+
+			return false;
+		}
+
+		function atualizarContador() {
+			var tabela = document.getElementById("tabela");
+			var contador = document.getElementById("contador");
+
+			var totalRegistros = tabela.rows.length - 1;
+
+			if (totalRegistros === 1) {
+				contador.innerHTML = "A tabela possui 1 registro.";
+			} else {
+				contador.innerHTML = "A tabela possui " + totalRegistros + " registros.";
+			}
+		}
 
 
 
